@@ -32,6 +32,28 @@ phpize && \
 --enable-mysqlnd && \
 make clean && make && sudo make install
 ```
+```bash
+
+Mac编译
+
+修改 /usr/local/Cellar/php/7.3.11/bin/php-config 
+
+extension_dir='/usr/local/Cellar/php/7.3.11/pecl/20160303' 中的 『pecl』 换成 『lib』
+extension_dir='/usr/local/Cellar/php/7.3.11/lib/php/20160303'
+
+phpize && \
+./configure \
+--with-php-config=/usr/local/Cellar/php/7.3.11/bin/php-config \
+--with-openssl-dir=/usr/local/Cellar/openssl/1.0.2t \
+--enable-openssl  \
+--enable-http2  \
+--enable-sockets \
+--enable-mysqlnd && \
+make clean && make && sudo make install
+
+vi php.ini
+extension_dir = 你的拓展库编译的位置
+```
 
 `php.ini 增加 extension=swoole.so`
 
