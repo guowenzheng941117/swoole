@@ -47,6 +47,7 @@ class EasySwooleEvent implements Event
             MyLog::getInstance()->log(json_encode($builder->getLastBindParams(), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES), MyLog::LOG_LEVEL_INFO, 'SQL');
             MyLog::getInstance()->log($builder->getLastQuery(), MyLog::LOG_LEVEL_INFO, 'SQL');
             MyLog::getInstance()->log($builder->getLastPrepareQuery(), MyLog::LOG_LEVEL_INFO, 'SQL');
+            //res不一定为数组 也可能是boolean
             MyLog::getInstance()->log(json_encode($res->toArray(), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES), MyLog::LOG_LEVEL_INFO, 'SQL');
         });
     }
