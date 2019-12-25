@@ -19,7 +19,7 @@
 安装时可以参考swoole官方文档说明(PHP-7.3 版本的 pcre.jit 存在 bug，可能会导致进程持续崩溃，请修改 php.ini 设置 pcre.jit=0)
 
 ```bash
-wget https://github.com/swoole/swoole-src/archive/v4.4.8.tar.gz && tar -xzvf v4.4.8.tar.gz
+wget https://github.com/swoole/swoole-src/archive/v4.4.12.tar.gz && tar -xzvf v4.4.12.tar.gz
 
 cd swoole
 
