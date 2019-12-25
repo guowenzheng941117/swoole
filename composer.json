@@ -10,8 +10,8 @@
     ],
     "require": {
         "php": ">=7.2.0",
-        "ext-swoole": ">=4.4.8",
-        "easyswoole/easyswoole": "3.3.2",
+        "ext-swoole": ">=4.4.12",
+        "easyswoole/easyswoole": "3.3.4",
         "easyswoole/swoole-ide-helper": "^1.0",
         "easyswoole/orm": "^1.0",
         "easyswoole/jwt": "^1.0",
