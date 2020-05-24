@@ -50,8 +50,9 @@ return [
     ],
     /*################ QINIUYUN 七牛云配置 ##################*/
     'QINIU' => [
-        'accessKey' => '*************',
-        'secretKey' => '*************'
+        'accessKey' => 'xdrNZv0xRp1r_kaAyAXrv5Oc-9YEF2RB1iv9FUZS',
+        'secretKey' => 'by7BDeeX9EySeuXrSs_h0i1U9xDURcfA-lGnkZuN',
+        'bucket'    => 'jirui-website-images'
     ],
     /*################ BAN_LIST  不需要进行请求日志的网站   ##################*/
     'BAN_LIST' => [
